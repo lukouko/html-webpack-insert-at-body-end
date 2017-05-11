@@ -1,0 +1,31 @@
+{
+  "name": "html-webpack-insert-at-body-end",
+  "version": "1.0.0",
+  "description": "Allows for the insertion of script tags at the end of the body element after HtmlWebpackPlugin has executed",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukouko/html-webpack-insert-at-body-end.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html-webpack-plugin",
+    "body",
+    "script"
+  ],
+  "author": "Luke Marsden <lukouko@gmail.com> (https://github.com/lukouko)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukouko/html-webpack-insert-at-body-end/issues"
+  },
+  "homepage": "https://github.com/lukouko/html-webpack-insert-at-body-end",
+  "devDependencies": {},
+  "dependencies": {
+    "xtend": "^4.0.1"
+  }
+}
