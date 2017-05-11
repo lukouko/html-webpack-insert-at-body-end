@@ -1,6 +1,6 @@
 {
   "name": "html-webpack-insert-at-body-end",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows for the insertion of script tags at the end of the body element after HtmlWebpackPlugin has executed",
   "main": "index.js",
   "files": [
