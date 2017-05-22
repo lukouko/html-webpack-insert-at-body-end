@@ -27,10 +27,7 @@ var webpackConfig = {
   },
   plugins: [
     new HtmlWebpackPlugin({filename: 'index.html'}),
-    new HtmlWebpackInsertAtBodyEndPlugin({filename: 'index.html', scriptTag: 'scripts/patch.js'})
+    new HtmlWebpackInsertAtBodyEndPlugin({filename: 'index.html', scriptSrc: 'scripts/patch.js'})
   ]
 };
 ```
-
-
-
