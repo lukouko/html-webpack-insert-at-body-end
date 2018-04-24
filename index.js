@@ -15,8 +15,8 @@ function InsertAtBodyEnd(options) {
  
 InsertAtBodyEnd.prototype.apply = function(compiler) {
   const that = this;
-  compiler.plugin('compilation', function(compilation) { 
-    compilation.plugin('html-webpack-plugin-after-html-processing', function(htmlPluginData, callback) {
+  compiler.hooks.compilation.tap('InsertAtBodyEnd', compilation => { 
+    compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync('InsertAtBodyEnd', (htmlPluginData, callback) => {
       if (htmlPluginData.plugin.options.filename !== that.options.filename) return callback(null, htmlPluginData);
 
       const scriptTag = '  <script src="' + that.options.scriptSrc + '" type="text/javascript"></script>\n'
